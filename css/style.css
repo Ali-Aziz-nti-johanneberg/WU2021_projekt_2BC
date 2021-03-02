@@ -73,7 +73,6 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        flex: 1;
     }
 
     .box1{
@@ -89,19 +88,66 @@
     .main{
         display:block;
         display: flex;
-        align-content:space-around ;
-        overflow: hidden;
+        flex: none;
+        flex-direction: column;
+        justify-content: space-around;
+        
+
 
     }
 
 
     .section1{
         display: block;
+        background-image: url("../img/wengang-zhai-_fOL6ebfECQ-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        height: 60%;
+        width: 100%;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    
         
     }
 
+    .row{
+        margin: 2vh;
+        position: relative;
+        color:#171717;
+        font-weight:bolder;
+        top: -10px;
+    }
+    .row h1{
+        
+        font-size: 20px;
+        line-height: 12px;
+        white-space: nowrap;
+        
+    }
+
+    .row p{
+        font-size: 14px;   
+        text-shadow: white 0px 0px 10px;    
+
+
+    }
+
+    .buy-btn{
+        display: inline-block;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 30px;
+        background-color: #171717;
+        font-size: 13px;
+        box-shadow:none;
+        text-decoration: none;
+    }
     .section2{
         display: block;
+        color: wheat;
+        height: 40%;
+        width: 100%;
        
     }
 
