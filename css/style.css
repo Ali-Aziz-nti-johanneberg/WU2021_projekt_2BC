@@ -30,7 +30,11 @@
 
 .section1{
     grid-area: s1;
-    background-color: black;
+    display: none;
+}
+
+.section2{
+    grid-area: s1;
     display: none;
 }
 
@@ -85,15 +89,20 @@
     .main{
         display:block;
         display: flex;
-        flex: none;
-        object-fit: fill;
+        align-content:space-around ;
+        overflow: hidden;
+
     }
+
+
     .section1{
-        display: flex;
-        flex: 0 auto;
         display: block;
-        object-fit: cover;
-   
+        
+    }
+
+    .section2{
+        display: block;
+       
     }
 
     .footer{
