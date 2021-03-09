@@ -38,6 +38,10 @@
     display: none;
 }
 
+.slider{
+    display: none;
+}
+
 
 
 .footer{
@@ -148,7 +152,27 @@
         color: wheat;
         height: 40%;
         width: 100%;
-       
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly; 
+        background-color:white;
+    }
+
+    .slider{
+        display: block;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .slider img{
+        width:  60px;
+        height: 60px;
+        border-radius: 50%;
     }
 
     .footer{
