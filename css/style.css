@@ -1,9 +1,14 @@
 /* ----- Main frame ----- */
 
+body{
+    padding: 0;
+    margin: 0;
+}
+
 .container {
-    height: 100vh;
+
     width: 100%;
-    background-color: #faf9f8;
+    background-color: #F2F2F7;
     grid-gap: 10px;
     display: grid;
     font-family: 'Poppins', sans-serif;
@@ -11,13 +16,11 @@
 
 .header{
     grid-area: he;
-    background-color: black;
     display: none;
 }
 
 .main{
     grid-area: ma;
-    background-color: #faf9f8;
     display: none;
 }
 
@@ -63,6 +66,7 @@
 /* ------    Mobil       -----------*/
 @media only screen and (max-width: 376px){
     .container{
+        grid-template-rows: 7.5vmax auto auto auto auto;
         grid-template-areas: 
         'he he he he he'
         'ma ma ma ma ma'
@@ -77,92 +81,144 @@
         display:block;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .box1{
-        background-color: wheat;
-        padding: 10%;
+        padding-left: 5vw;
     }
 
     .box2{
         background-color: wheat;
-        padding: 10%;
+        padding-right: 5vw;
     }
 
-    .main{
-        display:block;
-        display: flex;
-        flex: none;
+    .menu{
+        height: 100vh;
+        width: 80vw;
+        background-color:#212121;
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
         flex-direction: column;
-        justify-content: space-around;
-        
+        display: flex;
+        }
 
+    .hamburger-menu{
+        cursor: pointer;
+        display: inline;
+    }
+
+    .hamburger-menu i.material-icons{
+        font-size: 2.5rem;
+    }
+
+    .show{
+        left: 0;
+    }
+
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
+
+    .burger-s{
+        font-size: 20px;
+        height: 62px;
+        line-height: 62px;
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10%;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .fade-layer.visible{
+        display: block;
+    }
+
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
 
     }
 
 
     .section1{
-        display: block;
         background-image: url("../img/wengang-zhai-_fOL6ebfECQ-unsplash.jpg");
         background-repeat: no-repeat;
         background-size:cover;
         display: flex;
         height: 60%;
-        width: 100%;
         align-content: flex-start;
         flex-wrap: wrap;
-    
-        
+        margin: 0 10px;
+        background-position: 20%;
     }
 
     .row{
         margin: 2vh;
         position: relative;
         color:#171717;
-        font-weight:bolder;
         top: -10px;
     }
     .row h1{
-        
-        font-size: 20px;
+        color:rgba(0,0,0,0.87);
+        font-size: 36px;
         line-height: 12px;
         white-space: nowrap;
-        
+        max-width: 75vw;
     }
 
     .row p{
-        font-size: 14px;   
-        text-shadow: white 0px 0px 10px;    
+        color:rgba(0,0,0,0.65   );
+        font-size: 16px;   
+        text-shadow: #faf9f8 0px 0px 10px;    
+        font-weight: 500;
 
 
     }
 
     .buy-btn{
+        margin-top:1rem;
         display: inline-block;
-        color: white;
+        color: rgba(0,0,0,0.87);
         padding: 5px 10px;
         border-radius: 30px;
-        background-color: #171717;
-        font-size: 13px;
-        box-shadow:none;
+        background-color: #FFCC80;
         text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
     }
     .section2{
         display: block;
-        color: wheat;
-        height: 40%;
         width: 100%;
+        height: 100vh;
         flex-direction: column;
         display: flex;
-        justify-content: space-evenly; 
         align-items: center;
     }
 
     .title{
         text-transform: uppercase;
-        color: black;
-        font-weight: 900 ;
+        color: rgba(0,0,0,0.87);
+        font-weight: 600;
+        font-size: 1.6rem;
     }
 
     .border_line{
@@ -170,19 +226,24 @@
         width: 160px;
         height: 3px;
         background-color: orange;
+        margin: 8px;
     }
 
     .slider{
+        margin-top: 2.5rem ;
         display: block;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
-        color: black;
-        gap: 10px;
+        color: rgba(0,0,0,0.65);
+        gap: 2rem;
         line-height: 1.45px;
         font-weight:400 ;
+        font-family: 'Lato', sans-serif;
+        font-size: 19px;
+        flex-wrap: wrap;
     }
 
     .slider img{
