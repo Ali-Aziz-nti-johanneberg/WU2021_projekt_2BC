@@ -3,33 +3,35 @@
 body{
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .container {
 
-    width: 100%;
     background-color: #F2F2F7;
     grid-gap: 10px;
     display: grid;
     font-family: 'Poppins', sans-serif;
 }
 
+
 .header{
     grid-area: he;
     display: none;
 }
 
+.desktop-menu{
+    display:none;
+}
+
+.menu{
+    display: none;
+}
 .main{
     grid-area: ma;
     display: none;
 }
 
-
-.nav{
-    grid-area: na;
-    background-color: black;
-    display: none;
-}
 
 
 .section1{
@@ -50,7 +52,7 @@ body{
 
 .footer{
     grid-area: fo;
-    width: 100vw;
+    width: 100%;
     display: block;
     overflow: hidden;
     pad: 70px 0;
@@ -146,7 +148,6 @@ body{
    
    
     .header{
-        display:block;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -356,6 +357,7 @@ body{
 /* ------- Desktop ---------*/
 @media only screen and (min-width: 377px){
     .container{
+        width: 100%;
         grid-template-areas: 
         'he he he he he'
         'na na na na na'
@@ -366,7 +368,9 @@ body{
     }
    
     .header{
-        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .box1{
@@ -374,16 +378,26 @@ body{
     }
 
     .box2{
-        display: none;
+        display: flex;
+    }
+
+    .desktop-menu{
+        display: flex;
+        text-decoration: none;
+        justify-content: space-evenly;
+        width:100%;
+    }
+
+    .burger-s{
+        text-decoration: none;
     }
 
     .main{
         display:block;
+        background: coral;
+        height: 100vh;
     }
     .footer{
-        display:block;
-    }
-    .header{
         display:block;
     }
     
