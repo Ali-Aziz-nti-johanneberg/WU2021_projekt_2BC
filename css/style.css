@@ -382,10 +382,9 @@ body{
     }
 
     .desktop-menu{
+        grid-area: na;
         display: flex;
-        text-decoration: none;
         justify-content: space-evenly;
-        width:100%;
     }
 
     .burger-s{
@@ -394,8 +393,11 @@ body{
 
     .main{
         display:block;
-        background: coral;
         height: 100vh;
+    }
+
+    .section1{
+        background-image: url("../img/paul-gaudriault-a-QH9MAAVNI-unsplash\ \(3\).jpg");
     }
     .footer{
         display:block;
