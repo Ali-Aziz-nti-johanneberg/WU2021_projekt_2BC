@@ -26,7 +26,6 @@ body{
 
 
 
-
 .header{
     grid-area: he;
     display: none;
@@ -49,12 +48,8 @@ body{
 
 /*-----------------Contact us mobile/desktop ------*/
 
-.main-3{
-    width: 100%;
-}
 .contact-section{
     padding: 40 px 0;
-    width: 100%;
 }
 
 .contact-section h1{
@@ -505,8 +500,13 @@ textarena.contact-form-text{
          color: orange;
     }
     
-    
+     /*-----------------cloth desktop (end)------*/
 
+     /*-----------------Contact us desktop (start)------*/
+    .main-3{
+       grid-area: ma;
+    }
+    /*-----------------Contact us desktop (end)------*/
 
     .footer .inner_footer{
         width: 90%;
@@ -766,6 +766,11 @@ textarena.contact-form-text{
    }
 
    /*--------------- Clothes.html (end)-------------*/
+   /*-----------------Contact us desktop (start)------*/
+   .main-3{
+       grid-area: ma;
+   }
+    /*-----------------Contact us desktop (end)------*/
     .footer{
         display:block;
     }
