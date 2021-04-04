@@ -49,7 +49,7 @@ body{
 /*-----------------Contact us mobile/desktop ------*/
 
 .contact-section{
-    padding: 40 px 0;
+    padding: 40px 0;
 }
 
 .contact-section h1{
@@ -318,7 +318,7 @@ textarena.contact-form-text{
     width: 100%;
     display: block;
     overflow: hidden;
-    pad: 70px 0;
+    padding: 70px 0;
     box-sizing: border-box;
     background-color: #18181a;
 }
@@ -346,7 +346,6 @@ textarena.contact-form-text{
 }
 
 .inner_footer .footer_third{
-    width: calc(21,6666666667% -20px);
     margin-left: 10px;
     float: left;
     height: 100%;
@@ -556,7 +555,7 @@ textarena.contact-form-text{
     .section2{
         display: block;
         width: 100%;
-        height: 40%vh;
+        height: 40%;
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -888,11 +887,11 @@ textarena.contact-form-text{
 
     .card:hover .info-desktop {
         opacity: 1;
-   }
+    }
     
    .card:hover img {
     filter: brightness(50%);
-   }
+    }
 
    .info-desktop{
        position: fixed;
@@ -900,7 +899,7 @@ textarena.contact-form-text{
        color: #fff;
        margin-left: 8px;
 
-   }
+    }
 
    .info-btn{
     margin-top:1rem;
@@ -920,7 +919,7 @@ textarena.contact-form-text{
 
    .main-2{
        grid-area: ma;
-       height: 280  vh;
+       height: 280vh;
        width: 100%;
        display: grid;
        position: relative;
@@ -932,7 +931,7 @@ textarena.contact-form-text{
        'smt smt smt smt'
        ;
 
-   }
+    }
 
    .small-container-kids{
     grid-area: smk;
@@ -971,19 +970,19 @@ textarena.contact-form-text{
         margin-right: 1rem;
         line-height: 10px;
         cursor: pointer;
-   }
+    }
         
-   }
+
    .col-1 img{
      max-width: 45vw;
      height: 40vh; 
      width: 100%;
 
-   }
+    }
    .rating .fa{
         color: orange;
         margin-top: 15px;
-   }
+    }
 
    /*--------------- Clothes.html (end)-------------*/
    /*-----------------Contact us desktop (start)------*/
