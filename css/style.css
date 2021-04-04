@@ -370,14 +370,9 @@ textarena.contact-form-text{
     color: white;
     font-weight: 200;
     display: block;
-    width: 100%;
     padding-bottom: 5px;
 }
 
-.inner_footer .footer_third li{
-    display: inline-block;
-    padding: 0 5px;
-}   
 
 .inner_footer .footer_third span{
     color: white;
@@ -386,6 +381,14 @@ textarena.contact-form-text{
     font-weight: 200;
     width: 100%;
     display: block;
+}
+
+.footer_third_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem
+    
 }
 
 
@@ -797,7 +800,7 @@ textarena.contact-form-text{
     }
 
     .section1{
-        background-image: url("../img/paul-gaudriault-a-QH9MAAVNI-unsplash\ \(1\)\ \(1\).jpg");
+        background-image: url("../img/paul-gaudriault-a-QH9MAAVNI-unsplash\(1\)\(1\).jpg");
         background-repeat: no-repeat;
         background-size:cover;
         display: flex;
