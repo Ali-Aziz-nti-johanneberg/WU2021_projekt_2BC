@@ -508,7 +508,7 @@ textarena.contact-form-text{
 
 
     .section1{
-        background-image: url("../img/wengang-zhai-_fOL6ebfECQ-unsplash.jpg");
+        background-image: url("../img/wengang-zhai-_fOL6ebfECQ-unsplash\(2\).jpg");
         background-repeat: no-repeat;
         background-size:cover;
         display: flex;
@@ -558,10 +558,11 @@ textarena.contact-form-text{
     .section2{
         display: block;
         width: 100%;
-        height: 40%;
+        height: auto;
         flex-direction: column;
         display: flex;
         align-items: center;
+
     }
 
     .title{
